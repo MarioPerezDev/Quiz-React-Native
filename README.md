@@ -8,7 +8,7 @@ Realizado por Mario Pérez Gil
 - Botones de guardado y cargado de partida
 
 # Vista previa
-![alt game screen](https://github.com/MarioPerezDev/Quiz_React/blob/master/screenshots/screenshots.jpg)
+![alt game screen](https://github.com/MarioPerezDev/Quiz-React-Native/blob/master/screenshots/screenshots.jpg)
 
 
 ## Available Scripts

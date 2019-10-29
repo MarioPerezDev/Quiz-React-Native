@@ -1,0 +1,15 @@
+Miembros del grupo:
+Jorge Méndez-Benegassi Márquez
+Mario Pérez Gil
+
+La plataforma elegida ha sido Android.
+
+Las mejoras han sido:
+
+-Navegador:
+3 Pantallas (Inicio, Author y Juego)
+Se puede navegar entre ellas con la barra superior de la aplicación.
+
+-Guardado de preguntas:
+Se pueden utilizar los botones de guardado, cargado y eliminado de preguntas.
+Estos muestran un mensaje con lo que se ha guardado,cargado o eliminado.

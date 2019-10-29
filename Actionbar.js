@@ -13,10 +13,11 @@ export class Actionbar extends React.Component {
 	
 _storeData = async () => {
 	var quests = this.props.questions;
+	const textval = this.props.currentQuestion+1;
   try {
     await AsyncStorage.setItem('@Quiz:questions',JSON.stringify(quests));
 	await AsyncStorage.setItem('@Quiz:currentQuestion',JSON.stringify(this.props.currentQuestion));
-	Alert.alert("Partida guardada", "La partida con pregunta actual " +this.props.currentQuestion+ " ha sido guardada.")
+	Alert.alert("Partida guardada", "La partida con pregunta actual " + textval + " ha sido guardada.")
   } catch (error) {
   	Alert.alert("Error","Error al guardar partida")
     // Error saving data
@@ -29,12 +30,13 @@ _retrieveData = async () => {
     const value2 = await (AsyncStorage.getItem('@Quiz:currentQuestion'));
     const value2good = JSON.parse(value2)
  	const questionsgood = JSON.parse(value)
+ 	const textvalue = value2good +1;
 
     if (value !== null) {
       // We have data!!
       this.props.dispatch(directQuestion(value2good));
       this.props.dispatch(initQuestions(questionsgood));
-      Alert.alert("Partida cargada", "La partida con pregunta actual " +value2+ " ha sido cargada.")
+      Alert.alert("Partida cargada", "La partida con pregunta actual " + textvalue + " ha sido cargada.")
     }
     else{
 Alert.alert("Error","No hay partidas guardadas")
